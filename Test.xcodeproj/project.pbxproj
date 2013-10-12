@@ -23,6 +23,8 @@
 		D0D8593B18093CE4006C7DFF /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8593A18093CE4006C7DFF /* TestTests.m */; };
 		D0D8594718093DEB006C7DFF /* XTUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8594618093DEB006C7DFF /* XTUserModel.m */; };
 		D0D8594818093DEB006C7DFF /* XTUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8594618093DEB006C7DFF /* XTUserModel.m */; };
+		D0D85950180940A0006C7DFF /* XTNonNilMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8594F180940A0006C7DFF /* XTNonNilMutableDictionary.m */; };
+		D0D85951180940A0006C7DFF /* XTNonNilMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8594F180940A0006C7DFF /* XTNonNilMutableDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		D0D8593A18093CE4006C7DFF /* TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTests.m; sourceTree = "<group>"; };
 		D0D8594518093DEB006C7DFF /* XTUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTUserModel.h; sourceTree = "<group>"; };
 		D0D8594618093DEB006C7DFF /* XTUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTUserModel.m; sourceTree = "<group>"; };
+		D0D8594E180940A0006C7DFF /* XTNonNilMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTNonNilMutableDictionary.h; sourceTree = "<group>"; };
+		D0D8594F180940A0006C7DFF /* XTNonNilMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTNonNilMutableDictionary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 				D0D8592518093CE3006C7DFF /* XTViewController.m */,
 				D0D8592718093CE3006C7DFF /* Images.xcassets */,
 				D0D8591618093CE3006C7DFF /* Supporting Files */,
+				D0D8594E180940A0006C7DFF /* XTNonNilMutableDictionary.h */,
+				D0D8594F180940A0006C7DFF /* XTNonNilMutableDictionary.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 				D0D8594718093DEB006C7DFF /* XTUserModel.m in Sources */,
 				D0D8592018093CE3006C7DFF /* XTAppDelegate.m in Sources */,
 				D0D8592618093CE3006C7DFF /* XTViewController.m in Sources */,
+				D0D85950180940A0006C7DFF /* XTNonNilMutableDictionary.m in Sources */,
 				D0D8591C18093CE3006C7DFF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D85951180940A0006C7DFF /* XTNonNilMutableDictionary.m in Sources */,
 				D0D8594818093DEB006C7DFF /* XTUserModel.m in Sources */,
 				D0D8593B18093CE4006C7DFF /* TestTests.m in Sources */,
 			);
