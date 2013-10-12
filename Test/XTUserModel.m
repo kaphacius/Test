@@ -28,8 +28,10 @@ static NSString * const kUsernameKey = @"username";
         self.first_name = dictionary[kFirstNameKey];
         self.id = dictionary[kIdKey];
         self.last_name = dictionary[kLastNameKey];
-        self.username
+        self.username;
     }
+    
+    return self;
 }
 
 @end

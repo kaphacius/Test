@@ -25,6 +25,8 @@
 		D0D8594818093DEB006C7DFF /* XTUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8594618093DEB006C7DFF /* XTUserModel.m */; };
 		D0D85950180940A0006C7DFF /* XTNonNilMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8594F180940A0006C7DFF /* XTNonNilMutableDictionary.m */; };
 		D0D85951180940A0006C7DFF /* XTNonNilMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8594F180940A0006C7DFF /* XTNonNilMutableDictionary.m */; };
+		D0D8595418095B9E006C7DFF /* XTAccessTokenStorageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8595318095B9E006C7DFF /* XTAccessTokenStorageWrapper.m */; };
+		D0D8595518095B9E006C7DFF /* XTAccessTokenStorageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8595318095B9E006C7DFF /* XTAccessTokenStorageWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		D0D8594618093DEB006C7DFF /* XTUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTUserModel.m; sourceTree = "<group>"; };
 		D0D8594E180940A0006C7DFF /* XTNonNilMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTNonNilMutableDictionary.h; sourceTree = "<group>"; };
 		D0D8594F180940A0006C7DFF /* XTNonNilMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTNonNilMutableDictionary.m; sourceTree = "<group>"; };
+		D0D8595218095B9E006C7DFF /* XTAccessTokenStorageWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTAccessTokenStorageWrapper.h; sourceTree = "<group>"; };
+		D0D8595318095B9E006C7DFF /* XTAccessTokenStorageWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTAccessTokenStorageWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 				D0D8591618093CE3006C7DFF /* Supporting Files */,
 				D0D8594E180940A0006C7DFF /* XTNonNilMutableDictionary.h */,
 				D0D8594F180940A0006C7DFF /* XTNonNilMutableDictionary.m */,
+				D0D8595218095B9E006C7DFF /* XTAccessTokenStorageWrapper.h */,
+				D0D8595318095B9E006C7DFF /* XTAccessTokenStorageWrapper.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0D8594718093DEB006C7DFF /* XTUserModel.m in Sources */,
+				D0D8595418095B9E006C7DFF /* XTAccessTokenStorageWrapper.m in Sources */,
 				D0D8592018093CE3006C7DFF /* XTAppDelegate.m in Sources */,
 				D0D8592618093CE3006C7DFF /* XTViewController.m in Sources */,
 				D0D85950180940A0006C7DFF /* XTNonNilMutableDictionary.m in Sources */,
@@ -283,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0D85951180940A0006C7DFF /* XTNonNilMutableDictionary.m in Sources */,
+				D0D8595518095B9E006C7DFF /* XTAccessTokenStorageWrapper.m in Sources */,
 				D0D8594818093DEB006C7DFF /* XTUserModel.m in Sources */,
 				D0D8593B18093CE4006C7DFF /* TestTests.m in Sources */,
 			);
