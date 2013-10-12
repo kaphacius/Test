@@ -21,6 +21,8 @@
 		D0D8593118093CE4006C7DFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D8591318093CE3006C7DFF /* UIKit.framework */; };
 		D0D8593918093CE4006C7DFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0D8593718093CE4006C7DFF /* InfoPlist.strings */; };
 		D0D8593B18093CE4006C7DFF /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8593A18093CE4006C7DFF /* TestTests.m */; };
+		D0D8594718093DEB006C7DFF /* XTUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8594618093DEB006C7DFF /* XTUserModel.m */; };
+		D0D8594818093DEB006C7DFF /* XTUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8594618093DEB006C7DFF /* XTUserModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		D0D8593618093CE4006C7DFF /* TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestTests-Info.plist"; sourceTree = "<group>"; };
 		D0D8593818093CE4006C7DFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0D8593A18093CE4006C7DFF /* TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTests.m; sourceTree = "<group>"; };
+		D0D8594518093DEB006C7DFF /* XTUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTUserModel.h; sourceTree = "<group>"; };
+		D0D8594618093DEB006C7DFF /* XTUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTUserModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 		D0D8591518093CE3006C7DFF /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				D0D8594418093DCE006C7DFF /* Models */,
 				D0D8591E18093CE3006C7DFF /* XTAppDelegate.h */,
 				D0D8591F18093CE3006C7DFF /* XTAppDelegate.m */,
 				D0D8592118093CE3006C7DFF /* Main.storyboard */,
@@ -150,6 +155,15 @@
 				D0D8593718093CE4006C7DFF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0D8594418093DCE006C7DFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8594518093DEB006C7DFF /* XTUserModel.h */,
+				D0D8594618093DEB006C7DFF /* XTUserModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D8594718093DEB006C7DFF /* XTUserModel.m in Sources */,
 				D0D8592018093CE3006C7DFF /* XTAppDelegate.m in Sources */,
 				D0D8592618093CE3006C7DFF /* XTViewController.m in Sources */,
 				D0D8591C18093CE3006C7DFF /* main.m in Sources */,
@@ -260,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D8594818093DEB006C7DFF /* XTUserModel.m in Sources */,
 				D0D8593B18093CE4006C7DFF /* TestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
