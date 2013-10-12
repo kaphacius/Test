@@ -12,6 +12,8 @@
 
 @property (nonatomic, readonly) NSMutableDictionary *dictionary;
 
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
 - (id)objectForKeyedSubscript:(id <NSCopying>)key;
 - (void)setObject:(id)obj forKeyedSubscript:(id <NSCopying>)key;
 

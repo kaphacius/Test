@@ -19,11 +19,16 @@
 
 - (instancetype)init
 {
+    return [self initWithDictionary:nil];
+}
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary
+{
     self = [super init];
     
     if (nil != self)
     {
-        _dictionary = [[NSMutableDictionary alloc] init];
+        _dictionary = [dictionary mutableCopy];
     }
     
     return self;

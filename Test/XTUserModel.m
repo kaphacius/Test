@@ -7,6 +7,7 @@
 //
 
 #import "XTUserModel.h"
+#import "XTNonNilMutableDictionary.h"
 
 static NSString * const kAccessTokenKey = @"access_token";
 static NSString * const kEmailKey = @"email";
@@ -14,6 +15,15 @@ static NSString * const kFirstNameKey = @"first_name";
 static NSString * const kIdKey = @"id";
 static NSString * const kLastNameKey = @"last_name";
 static NSString * const kUsernameKey = @"username";
+
+@interface XTUserModel()
+{
+    XTNonNilMutableDictionary *_nonNilDictionary;
+}
+
+@end
+
+#pragma mark -
 
 @implementation XTUserModel
 
@@ -23,15 +33,34 @@ static NSString * const kUsernameKey = @"username";
     
     if (nil != self)
     {
-        self.access_token = dictionary[kAccessTokenKey];
-        self.email = dictionary[kEmailKey];
-        self.first_name = dictionary[kFirstNameKey];
-        self.id = dictionary[kIdKey];
-        self.last_name = dictionary[kLastNameKey];
-        self.username;
+        _nonNilDictionary = [[XTNonNilMutableDictionary alloc] initWithDictionary:dictionary];
+        
+        self.access_token = _nonNilDictionary[kAccessTokenKey];
+        self.email = _nonNilDictionary[kEmailKey];
+        self.first_name = _nonNilDictionary[kFirstNameKey];
+        self.id = _nonNilDictionary[kIdKey];
+        self.last_name = _nonNilDictionary[kLastNameKey];
+        self.username = _nonNilDictionary[kUsernameKey];
     }
     
     return self;
+}
+
++ (instancetype)objectWithDictionary:(NSDictionary *)dictionary
+{
+    return [[XTUserModel alloc] initWithDictionary:dictionary];
+}
+
+- (NSDictionary *)serialize
+{
+    _nonNilDictionary[kAccessTokenKey] = self.access_token;
+    _nonNilDictionary[kEmailKey] = self.email;
+    _nonNilDictionary[kFirstNameKey] = self.first_name;
+    _nonNilDictionary[kIdKey] = self.id;
+    _nonNilDictionary[kLastNameKey] = self.last_name;
+    _nonNilDictionary[kUsernameKey] = self.username;
+    
+    return _nonNilDictionary.dictionary;
 }
 
 @end
