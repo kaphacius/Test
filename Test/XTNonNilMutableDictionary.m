@@ -36,7 +36,7 @@
 
 - (id)objectForKeyedSubscript:(id<NSCopying>)key
 {
-    return _dictionary[key] == [NSNull null] ? nil : key;
+    return _dictionary[key] == [NSNull null] ? nil : _dictionary[key];
 }
 
 - (void)setObject:(id)obj forKeyedSubscript:(id<NSCopying>)key

@@ -13,7 +13,7 @@
 @property (nonatomic, strong) NSString *access_token;
 @property (nonatomic, strong) NSString *email;
 @property (nonatomic, strong) NSString *first_name;
-@property (nonatomic, strong) NSString *id;
+@property (nonatomic, strong) NSNumber *id;
 @property (nonatomic, strong) NSString *last_name;
 @property (nonatomic, strong) NSString *username;
 
@@ -21,5 +21,6 @@
 + (instancetype)objectWithDictionary:(NSDictionary *)dictionary;
 
 - (NSDictionary *)serialize;
+- (void)populateWithDictionary:(NSDictionary *)dictionary;
 
 @end

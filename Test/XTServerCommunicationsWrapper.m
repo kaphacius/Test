@@ -6,10 +6,9 @@
 //  Copyright (c) 2013 Yurii Zadoianchuk. All rights reserved.
 //
 
-static NSString * const kServerUrl = @"http://127.0.0.1:5000/mymusic/api/v1.0/users/";
-
 #import "XTServerCommunicationsWrapper.h"
 #import "XTJsonCommunicationsWrapper.h"
+#import "XTConstants.h"
 
 @implementation XTServerCommunicationsWrapper
 
@@ -19,18 +18,65 @@ static NSString * const kServerUrl = @"http://127.0.0.1:5000/mymusic/api/v1.0/us
                                                        options:0
                                                          error:NULL];
     
+    return [self performServerCommunicationWithJsonData:jsonData
+                                             httpMethod:HttpMethodPost httpHeaders:nil];
+}
+
++ (NSDictionary *)authenticateUserWithUsername:(NSString * )username
+                                   accessToken:(NSString *)accessToken
+{
+    NSDictionary *httpHeaders = [self dictionaryWithUsernameHeader:username
+                                                 accessTokenHeader:accessToken];
+    
+    return [self performServerCommunicationWithJsonData:nil
+                                             httpMethod:HttpMethodGet
+                                            httpHeaders:httpHeaders];
+}
+
++ (NSDictionary *)deleteUserWithUsername:(NSString *)username
+                            accessToken:(NSString *)accessToken
+{
+    NSDictionary *httpHeaders = [self dictionaryWithUsernameHeader:username
+                                                 accessTokenHeader:accessToken];
+    
+    return [self performServerCommunicationWithJsonData:nil
+                                             httpMethod:HttpMethodDelete
+                                            httpHeaders:httpHeaders];
+}
+
++ (NSDictionary *)updateUserWithUsername:(NSString *)username accessToken:(NSString *)accessToken dictionary:(NSDictionary *)dictionary
+{
+    NSDictionary *httpHeaders = [self dictionaryWithUsernameHeader:username
+                                                 accessTokenHeader:accessToken];
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictionary
+                                                       options:0
+                                                         error:NULL];
+    
+    return [self performServerCommunicationWithJsonData:jsonData
+                                             httpMethod:HttpMethodPut
+                                            httpHeaders:httpHeaders];
+}
+
++ (NSDictionary *)performServerCommunicationWithJsonData:(NSData *)jsonData
+                                              httpMethod:(HttpMethod)httpMethod
+                                             httpHeaders:(NSDictionary *)httpHeaders
+{
     NSData *responseData = [XTJsonCommunicationsWrapper sendJsonData:jsonData
-                                                               toUrl:kServerUrl
-                                                      withHttpMethod:HttpMethodPost];
+                                                               toUrl:[XTConstants kServerUrl]
+                                                      withHttpMethod:httpMethod
+                                                         httpHeaders:httpHeaders];
     
     return [NSJSONSerialization JSONObjectWithData:responseData
                                            options:0
                                              error:NULL];
 }
 
-+ (NSDictionary *)authenticateUserWithUserName:(NSString * )userName accessToken:(NSString *)accessToken
++ (NSMutableDictionary *)dictionaryWithUsernameHeader:(NSString *)username
+                                    accessTokenHeader:(NSString *)accessToken
 {
-    
+    return [@{ [XTConstants kApiUsernameHeader] : username,
+               [XTConstants kApiAccessTokenHeader] : accessToken} mutableCopy];
 }
 
 @end

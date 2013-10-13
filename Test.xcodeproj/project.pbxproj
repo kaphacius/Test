@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D09CBE1A180A7F49008771F8 /* XTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D09CBE19180A7F49008771F8 /* XTConstants.m */; };
+		D09CBE1D180AB6B4008771F8 /* XTUserManagementWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D09CBE1C180AB6B4008771F8 /* XTUserManagementWrapper.m */; };
 		D0D8591018093CE3006C7DFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D8590F18093CE3006C7DFF /* Foundation.framework */; };
 		D0D8591218093CE3006C7DFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D8591118093CE3006C7DFF /* CoreGraphics.framework */; };
 		D0D8591418093CE3006C7DFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D8591318093CE3006C7DFF /* UIKit.framework */; };
@@ -27,6 +29,10 @@
 		D0D85951180940A0006C7DFF /* XTNonNilMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8594F180940A0006C7DFF /* XTNonNilMutableDictionary.m */; };
 		D0D8595418095B9E006C7DFF /* XTAccessTokenStorageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8595318095B9E006C7DFF /* XTAccessTokenStorageWrapper.m */; };
 		D0D8595518095B9E006C7DFF /* XTAccessTokenStorageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8595318095B9E006C7DFF /* XTAccessTokenStorageWrapper.m */; };
+		D0D8595818096F82006C7DFF /* XTJsonCommunicationsWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8595718096F82006C7DFF /* XTJsonCommunicationsWrapper.m */; };
+		D0D8595918096F82006C7DFF /* XTJsonCommunicationsWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8595718096F82006C7DFF /* XTJsonCommunicationsWrapper.m */; };
+		D0D8595C18099B6D006C7DFF /* XTServerCommunicationsWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8595B18099B6C006C7DFF /* XTServerCommunicationsWrapper.m */; };
+		D0D8595D18099B6D006C7DFF /* XTServerCommunicationsWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8595B18099B6C006C7DFF /* XTServerCommunicationsWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D09CBE18180A7F49008771F8 /* XTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTConstants.h; sourceTree = "<group>"; };
+		D09CBE19180A7F49008771F8 /* XTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTConstants.m; sourceTree = "<group>"; };
+		D09CBE1B180AB6B4008771F8 /* XTUserManagementWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTUserManagementWrapper.h; sourceTree = "<group>"; };
+		D09CBE1C180AB6B4008771F8 /* XTUserManagementWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTUserManagementWrapper.m; sourceTree = "<group>"; };
 		D0D8590C18093CE3006C7DFF /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D8590F18093CE3006C7DFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D0D8591118093CE3006C7DFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,6 +75,10 @@
 		D0D8594F180940A0006C7DFF /* XTNonNilMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTNonNilMutableDictionary.m; sourceTree = "<group>"; };
 		D0D8595218095B9E006C7DFF /* XTAccessTokenStorageWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTAccessTokenStorageWrapper.h; sourceTree = "<group>"; };
 		D0D8595318095B9E006C7DFF /* XTAccessTokenStorageWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTAccessTokenStorageWrapper.m; sourceTree = "<group>"; };
+		D0D8595618096F81006C7DFF /* XTJsonCommunicationsWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTJsonCommunicationsWrapper.h; sourceTree = "<group>"; };
+		D0D8595718096F82006C7DFF /* XTJsonCommunicationsWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTJsonCommunicationsWrapper.m; sourceTree = "<group>"; };
+		D0D8595A18099B6C006C7DFF /* XTServerCommunicationsWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTServerCommunicationsWrapper.h; sourceTree = "<group>"; };
+		D0D8595B18099B6C006C7DFF /* XTServerCommunicationsWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTServerCommunicationsWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +138,8 @@
 		D0D8591518093CE3006C7DFF /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				D09CBE18180A7F49008771F8 /* XTConstants.h */,
+				D09CBE19180A7F49008771F8 /* XTConstants.m */,
 				D0D8594418093DCE006C7DFF /* Models */,
 				D0D8591E18093CE3006C7DFF /* XTAppDelegate.h */,
 				D0D8591F18093CE3006C7DFF /* XTAppDelegate.m */,
@@ -136,6 +152,12 @@
 				D0D8594F180940A0006C7DFF /* XTNonNilMutableDictionary.m */,
 				D0D8595218095B9E006C7DFF /* XTAccessTokenStorageWrapper.h */,
 				D0D8595318095B9E006C7DFF /* XTAccessTokenStorageWrapper.m */,
+				D0D8595618096F81006C7DFF /* XTJsonCommunicationsWrapper.h */,
+				D0D8595718096F82006C7DFF /* XTJsonCommunicationsWrapper.m */,
+				D0D8595A18099B6C006C7DFF /* XTServerCommunicationsWrapper.h */,
+				D0D8595B18099B6C006C7DFF /* XTServerCommunicationsWrapper.m */,
+				D09CBE1B180AB6B4008771F8 /* XTUserManagementWrapper.h */,
+				D09CBE1C180AB6B4008771F8 /* XTUserManagementWrapper.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -278,10 +300,14 @@
 			files = (
 				D0D8594718093DEB006C7DFF /* XTUserModel.m in Sources */,
 				D0D8595418095B9E006C7DFF /* XTAccessTokenStorageWrapper.m in Sources */,
+				D0D8595818096F82006C7DFF /* XTJsonCommunicationsWrapper.m in Sources */,
+				D09CBE1D180AB6B4008771F8 /* XTUserManagementWrapper.m in Sources */,
 				D0D8592018093CE3006C7DFF /* XTAppDelegate.m in Sources */,
+				D09CBE1A180A7F49008771F8 /* XTConstants.m in Sources */,
 				D0D8592618093CE3006C7DFF /* XTViewController.m in Sources */,
 				D0D85950180940A0006C7DFF /* XTNonNilMutableDictionary.m in Sources */,
 				D0D8591C18093CE3006C7DFF /* main.m in Sources */,
+				D0D8595C18099B6D006C7DFF /* XTServerCommunicationsWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +318,9 @@
 				D0D85951180940A0006C7DFF /* XTNonNilMutableDictionary.m in Sources */,
 				D0D8595518095B9E006C7DFF /* XTAccessTokenStorageWrapper.m in Sources */,
 				D0D8594818093DEB006C7DFF /* XTUserModel.m in Sources */,
+				D0D8595918096F82006C7DFF /* XTJsonCommunicationsWrapper.m in Sources */,
 				D0D8593B18093CE4006C7DFF /* TestTests.m in Sources */,
+				D0D8595D18099B6D006C7DFF /* XTServerCommunicationsWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +521,7 @@
 				D0D8594018093CE4006C7DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0D8594118093CE4006C7DFF /* Build configuration list for PBXNativeTarget "TestTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +530,7 @@
 				D0D8594318093CE4006C7DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

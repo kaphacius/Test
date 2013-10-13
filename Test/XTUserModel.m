@@ -36,14 +36,14 @@
         
         if (nil != dictionary)
         {
-            [self populateFromDictionary];
+            [self populateWithNonNilDictionary];
         }
     }
     
     return self;
 }
 
-- (void)populateFromDictionary
+- (void)populateWithNonNilDictionary
 {
     self.access_token = _nonNilDictionary[[XTConstants kAccessTokenKey]];
     self.email = _nonNilDictionary[[XTConstants kEmailKey]];
@@ -68,6 +68,12 @@
     _nonNilDictionary[[XTConstants kUsernameKey]] = self.username;
     
     return _nonNilDictionary.dictionary;
+}
+
+- (void)populateWithDictionary:(NSDictionary *)dictionary
+{
+    _nonNilDictionary = [[XTNonNilMutableDictionary alloc] initWithDictionary:dictionary];
+    [self populateWithNonNilDictionary];
 }
 
 @end

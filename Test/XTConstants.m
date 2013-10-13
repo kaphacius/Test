@@ -55,4 +55,19 @@
     return @"api_access_token";
 }
 
++ (NSString *)kErrorKey
+{
+    return @"error";
+}
+
++ (NSString *)kOkKey
+{
+    return @"ok";
+}
+
++ (NSString *)kServerUrl
+{
+   return @"http://127.0.0.1:5000/mymusic/api/v1.0/users/";
+}
+
 @end

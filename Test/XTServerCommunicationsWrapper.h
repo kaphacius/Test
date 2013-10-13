@@ -13,6 +13,8 @@
 @interface XTServerCommunicationsWrapper : NSObject
 
 + (NSDictionary *)createUserWithUserModelDictionary:(NSDictionary *)userModelDictionary;
-+ (NSDictionary *)authenticateUserWithUserModelDictionary:(NSDictionary *)userModelDictionary;
++ (NSDictionary *)authenticateUserWithUsername:(NSString * )username accessToken:(NSString *)accessToken;
++ (NSDictionary *)deleteUserWithUsername:(NSString *)username accessToken:(NSString *)accessToken;
++ (NSDictionary *)updateUserWithUsername:(NSString *)username accessToken:(NSString *)accessToken dictionary:(NSDictionary *)dictionary;
 
 @end

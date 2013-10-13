@@ -19,5 +19,9 @@
 + (NSString *)kUserKey;
 + (NSString *)kApiUsernameHeader;
 + (NSString *)kApiAccessTokenHeader;
++ (NSString *)kErrorKey;
++ (NSString *)kOkKey;
+
++ (NSString *)kServerUrl;
 
 @end

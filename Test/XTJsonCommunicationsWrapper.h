@@ -18,6 +18,6 @@ typedef NS_ENUM(NSUInteger, HttpMethod)
 
 @interface XTJsonCommunicationsWrapper : NSObject
 
-+ (NSData *)sendJsonData:(NSData *)jsonData toUrl:(NSString *)urlString withHttpMethod:(HttpMethod)httpMethod;
++ (NSData *)sendJsonData:(NSData *)jsonData toUrl:(NSString *)urlString withHttpMethod:(HttpMethod)httpMethod httpHeaders:(NSDictionary *)httpHeaders;
 
 @end

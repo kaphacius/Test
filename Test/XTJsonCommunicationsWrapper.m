@@ -10,7 +10,7 @@
 
 @implementation XTJsonCommunicationsWrapper
 
-+ (NSData *)sendJsonData:(NSData *)jsonData toUrl:(NSString *)urlString withHttpMethod:(HttpMethod)httpMethod
++ (NSData *)sendJsonData:(NSData *)jsonData toUrl:(NSString *)urlString withHttpMethod:(HttpMethod)httpMethod httpHeaders:(NSDictionary *)httpHeaders
 {
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
@@ -20,9 +20,20 @@
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPMethod:[self stringForHttpMethod:httpMethod]];
 
-    [request setValue:[NSString stringWithFormat:@"%d", [jsonData length]] forHTTPHeaderField:@"Content-Length"];
-    [request setHTTPBody:jsonData];
+    if (nil != jsonData)
+    {
+        [request setValue:[NSString stringWithFormat:@"%d", [jsonData length]] forHTTPHeaderField:@"Content-Length"];
+        [request setHTTPBody:jsonData];
+    }
     
+    if (nil != httpHeaders)
+    {
+        for (NSString *key in [httpHeaders allKeys])
+        {
+            [request setValue:httpHeaders[key] forHTTPHeaderField:key];
+        }
+    }
+
     return [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:NULL];
 }
 
