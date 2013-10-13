@@ -7,12 +7,24 @@
 //
 
 #import "XTAppDelegate.h"
+#import "XTJsonCommunicationsWrapper.h"
+#import "XTServerCommunicationsWrapper.h"
+#import "XTUserModel.h"
 
 @implementation XTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    XTUserModel *model = [[XTUserModel alloc] init];
+    model.email = @"aass";
+    model.first_name = @"ss";
+    model.last_name = @"ff";
+    model.username = @"qq";
+    
+    NSDictionary *d = [XTServerCommunicationsWrapper createUserWithUserModelDictionary:[model serialize]];
+    
     return YES;
 }
 							

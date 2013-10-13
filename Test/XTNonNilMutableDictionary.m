@@ -28,7 +28,7 @@
     
     if (nil != self)
     {
-        _dictionary = [dictionary mutableCopy];
+        _dictionary = nil == dictionary ? [NSMutableDictionary dictionary] : [dictionary mutableCopy];
     }
     
     return self;

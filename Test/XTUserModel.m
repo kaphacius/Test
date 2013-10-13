@@ -8,13 +8,7 @@
 
 #import "XTUserModel.h"
 #import "XTNonNilMutableDictionary.h"
-
-static NSString * const kAccessTokenKey = @"access_token";
-static NSString * const kEmailKey = @"email";
-static NSString * const kFirstNameKey = @"first_name";
-static NSString * const kIdKey = @"id";
-static NSString * const kLastNameKey = @"last_name";
-static NSString * const kUsernameKey = @"username";
+#import "XTConstants.h"
 
 @interface XTUserModel()
 {
@@ -27,6 +21,11 @@ static NSString * const kUsernameKey = @"username";
 
 @implementation XTUserModel
 
+- (instancetype)init
+{
+    return [self initWithDictionary:nil];
+}
+
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary
 {
     self = [super init];
@@ -35,15 +34,23 @@ static NSString * const kUsernameKey = @"username";
     {
         _nonNilDictionary = [[XTNonNilMutableDictionary alloc] initWithDictionary:dictionary];
         
-        self.access_token = _nonNilDictionary[kAccessTokenKey];
-        self.email = _nonNilDictionary[kEmailKey];
-        self.first_name = _nonNilDictionary[kFirstNameKey];
-        self.id = _nonNilDictionary[kIdKey];
-        self.last_name = _nonNilDictionary[kLastNameKey];
-        self.username = _nonNilDictionary[kUsernameKey];
+        if (nil != dictionary)
+        {
+            [self populateFromDictionary];
+        }
     }
     
     return self;
+}
+
+- (void)populateFromDictionary
+{
+    self.access_token = _nonNilDictionary[[XTConstants kAccessTokenKey]];
+    self.email = _nonNilDictionary[[XTConstants kEmailKey]];
+    self.first_name = _nonNilDictionary[[XTConstants kFirstNameKey]];
+    self.id = _nonNilDictionary[[XTConstants kIdKey]];
+    self.last_name = _nonNilDictionary[[XTConstants kLastNameKey]];
+    self.username = _nonNilDictionary[[XTConstants kUsernameKey]];
 }
 
 + (instancetype)objectWithDictionary:(NSDictionary *)dictionary
@@ -53,12 +60,12 @@ static NSString * const kUsernameKey = @"username";
 
 - (NSDictionary *)serialize
 {
-    _nonNilDictionary[kAccessTokenKey] = self.access_token;
-    _nonNilDictionary[kEmailKey] = self.email;
-    _nonNilDictionary[kFirstNameKey] = self.first_name;
-    _nonNilDictionary[kIdKey] = self.id;
-    _nonNilDictionary[kLastNameKey] = self.last_name;
-    _nonNilDictionary[kUsernameKey] = self.username;
+    _nonNilDictionary[[XTConstants kUsernameKey]] = self.access_token;
+    _nonNilDictionary[[XTConstants kEmailKey]] = self.email;
+    _nonNilDictionary[[XTConstants kFirstNameKey]] = self.first_name;
+    _nonNilDictionary[[XTConstants kIdKey]] = self.id;
+    _nonNilDictionary[[XTConstants kLastNameKey]] = self.last_name;
+    _nonNilDictionary[[XTConstants kUsernameKey]] = self.username;
     
     return _nonNilDictionary.dictionary;
 }

@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Yurii Zadoianchuk. All rights reserved.
 //
 
-static NSString *service = @"flask-user-api";
-
 #import "XTAccessTokenStorageWrapper.h"
 
 @implementation XTAccessTokenStorageWrapper
