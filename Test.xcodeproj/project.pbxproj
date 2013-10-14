@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D086C565180B296D0094792D /* XTAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D086C564180B296D0094792D /* XTAuthViewController.m */; };
+		D086C566180B296D0094792D /* XTAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D086C564180B296D0094792D /* XTAuthViewController.m */; };
+		D086C569180B2C9A0094792D /* XTAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D086C568180B2C9A0094792D /* XTAccountViewController.m */; };
+		D086C56A180B2C9A0094792D /* XTAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D086C568180B2C9A0094792D /* XTAccountViewController.m */; };
 		D09CBE1A180A7F49008771F8 /* XTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D09CBE19180A7F49008771F8 /* XTConstants.m */; };
 		D09CBE1D180AB6B4008771F8 /* XTUserManagementWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D09CBE1C180AB6B4008771F8 /* XTUserManagementWrapper.m */; };
 		D0D8591018093CE3006C7DFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D8590F18093CE3006C7DFF /* Foundation.framework */; };
@@ -16,7 +20,6 @@
 		D0D8591C18093CE3006C7DFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8591B18093CE3006C7DFF /* main.m */; };
 		D0D8592018093CE3006C7DFF /* XTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8591F18093CE3006C7DFF /* XTAppDelegate.m */; };
 		D0D8592318093CE3006C7DFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D8592118093CE3006C7DFF /* Main.storyboard */; };
-		D0D8592618093CE3006C7DFF /* XTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D8592518093CE3006C7DFF /* XTViewController.m */; };
 		D0D8592818093CE3006C7DFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D8592718093CE3006C7DFF /* Images.xcassets */; };
 		D0D8592F18093CE4006C7DFF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D8592E18093CE4006C7DFF /* XCTest.framework */; };
 		D0D8593018093CE4006C7DFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D8590F18093CE3006C7DFF /* Foundation.framework */; };
@@ -46,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D086C563180B296D0094792D /* XTAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTAuthViewController.h; sourceTree = "<group>"; };
+		D086C564180B296D0094792D /* XTAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTAuthViewController.m; sourceTree = "<group>"; };
+		D086C567180B2C9A0094792D /* XTAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTAccountViewController.h; sourceTree = "<group>"; };
+		D086C568180B2C9A0094792D /* XTAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTAccountViewController.m; sourceTree = "<group>"; };
 		D09CBE18180A7F49008771F8 /* XTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTConstants.h; sourceTree = "<group>"; };
 		D09CBE19180A7F49008771F8 /* XTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTConstants.m; sourceTree = "<group>"; };
 		D09CBE1B180AB6B4008771F8 /* XTUserManagementWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTUserManagementWrapper.h; sourceTree = "<group>"; };
@@ -61,8 +68,6 @@
 		D0D8591E18093CE3006C7DFF /* XTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTAppDelegate.h; sourceTree = "<group>"; };
 		D0D8591F18093CE3006C7DFF /* XTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTAppDelegate.m; sourceTree = "<group>"; };
 		D0D8592218093CE3006C7DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D0D8592418093CE3006C7DFF /* XTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTViewController.h; sourceTree = "<group>"; };
-		D0D8592518093CE3006C7DFF /* XTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTViewController.m; sourceTree = "<group>"; };
 		D0D8592718093CE3006C7DFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D0D8592D18093CE4006C7DFF /* TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D8592E18093CE4006C7DFF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -144,8 +149,6 @@
 				D0D8591E18093CE3006C7DFF /* XTAppDelegate.h */,
 				D0D8591F18093CE3006C7DFF /* XTAppDelegate.m */,
 				D0D8592118093CE3006C7DFF /* Main.storyboard */,
-				D0D8592418093CE3006C7DFF /* XTViewController.h */,
-				D0D8592518093CE3006C7DFF /* XTViewController.m */,
 				D0D8592718093CE3006C7DFF /* Images.xcassets */,
 				D0D8591618093CE3006C7DFF /* Supporting Files */,
 				D0D8594E180940A0006C7DFF /* XTNonNilMutableDictionary.h */,
@@ -158,6 +161,10 @@
 				D0D8595B18099B6C006C7DFF /* XTServerCommunicationsWrapper.m */,
 				D09CBE1B180AB6B4008771F8 /* XTUserManagementWrapper.h */,
 				D09CBE1C180AB6B4008771F8 /* XTUserManagementWrapper.m */,
+				D086C563180B296D0094792D /* XTAuthViewController.h */,
+				D086C564180B296D0094792D /* XTAuthViewController.m */,
+				D086C567180B2C9A0094792D /* XTAccountViewController.h */,
+				D086C568180B2C9A0094792D /* XTAccountViewController.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -303,10 +310,11 @@
 				D0D8595818096F82006C7DFF /* XTJsonCommunicationsWrapper.m in Sources */,
 				D09CBE1D180AB6B4008771F8 /* XTUserManagementWrapper.m in Sources */,
 				D0D8592018093CE3006C7DFF /* XTAppDelegate.m in Sources */,
+				D086C569180B2C9A0094792D /* XTAccountViewController.m in Sources */,
 				D09CBE1A180A7F49008771F8 /* XTConstants.m in Sources */,
-				D0D8592618093CE3006C7DFF /* XTViewController.m in Sources */,
 				D0D85950180940A0006C7DFF /* XTNonNilMutableDictionary.m in Sources */,
 				D0D8591C18093CE3006C7DFF /* main.m in Sources */,
+				D086C565180B296D0094792D /* XTAuthViewController.m in Sources */,
 				D0D8595C18099B6D006C7DFF /* XTServerCommunicationsWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +325,9 @@
 			files = (
 				D0D85951180940A0006C7DFF /* XTNonNilMutableDictionary.m in Sources */,
 				D0D8595518095B9E006C7DFF /* XTAccessTokenStorageWrapper.m in Sources */,
+				D086C566180B296D0094792D /* XTAuthViewController.m in Sources */,
 				D0D8594818093DEB006C7DFF /* XTUserModel.m in Sources */,
+				D086C56A180B2C9A0094792D /* XTAccountViewController.m in Sources */,
 				D0D8595918096F82006C7DFF /* XTJsonCommunicationsWrapper.m in Sources */,
 				D0D8593B18093CE4006C7DFF /* TestTests.m in Sources */,
 				D0D8595D18099B6D006C7DFF /* XTServerCommunicationsWrapper.m in Sources */,
