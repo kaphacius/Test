@@ -23,5 +23,15 @@
 + (NSString *)kOkKey;
 
 + (NSString *)kServerUrl;
++ (NSString *)kSuccessMesage;
++ (NSString *)kFailureMessage;
++ (NSString *)kMandatoryFieldsMessage;
++ (NSString *)kOkButtonTitle;
++ (NSString *)kCancelButtonTitle;
++ (NSString *)kBlockingViewNibName;
+
++ (NSInteger)kOkButtonIndex;
++ (NSInteger)kCancelButtonIndex;
++ (NSInteger)kBlockingViewTag;
 
 @end

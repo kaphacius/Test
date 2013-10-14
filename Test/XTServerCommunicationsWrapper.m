@@ -67,9 +67,7 @@
                                                       withHttpMethod:httpMethod
                                                          httpHeaders:httpHeaders];
     
-    return [NSJSONSerialization JSONObjectWithData:responseData
-                                           options:0
-                                             error:NULL];
+    return [self dictionaryFromNonNilData:responseData];
 }
 
 + (NSMutableDictionary *)dictionaryWithUsernameHeader:(NSString *)username
@@ -77,6 +75,13 @@
 {
     return [@{ [XTConstants kApiUsernameHeader] : username,
                [XTConstants kApiAccessTokenHeader] : accessToken} mutableCopy];
+}
+
++ (NSDictionary *)dictionaryFromNonNilData:(NSData *)data
+{
+    return nil == data ? nil : [NSJSONSerialization JSONObjectWithData:data
+                                                               options:0
+                                                                 error:NULL];
 }
 
 @end

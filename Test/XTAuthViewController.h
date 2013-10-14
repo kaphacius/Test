@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Yurii Zadoianchuk. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XTBlockableViewController.h"
 
-@interface XTAuthViewController : UIViewController <UITextFieldDelegate>
+@interface XTAuthViewController : XTBlockableViewController <UITextFieldDelegate>
 
 @end

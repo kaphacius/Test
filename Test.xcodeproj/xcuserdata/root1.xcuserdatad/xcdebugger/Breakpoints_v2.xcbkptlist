@@ -19,28 +19,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Test/XTAuthViewController.m"
-            timestampString = "403420785.138352"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "-authenticateButtonTapped"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Test/XTAccountViewController.m"
-            timestampString = "403427040.225679"
+            timestampString = "403441928.743167"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -51,13 +35,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Test/XTAccountViewController.m"
-            timestampString = "403426577.76565"
+            filePath = "Test/XTUtils.m"
+            timestampString = "403441440.901732"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "-setupWithUserModel:isRegistrationMode:"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "+performBackgroundUserManagementOperation:forBlockableViewController:withUserModel:handler:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

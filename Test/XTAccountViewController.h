@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Yurii Zadoianchuk. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XTBlockableViewController.h"
 
 @class XTUserModel;
 
-@interface XTAccountViewController : UIViewController <UITextFieldDelegate>
+@interface XTAccountViewController : XTBlockableViewController <UITextFieldDelegate, UIAlertViewDelegate>
 
 @property (nonatomic, strong) XTUserModel *userModel;
 @property (nonatomic) BOOL isInRegistrationMode;

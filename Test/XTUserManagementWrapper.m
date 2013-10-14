@@ -10,6 +10,7 @@
 #import "XTUserModel.h"
 #import "XTServerCommunicationsWrapper.h"
 #import "XTConstants.h"
+#import "XTAccessTokenStorageWrapper.h"
 
 @implementation XTUserManagementWrapper
 
@@ -23,6 +24,8 @@
     {
         [userModel populateWithDictionary:returnDictionary[[XTConstants kUserKey]]];
         result = YES;
+        
+        [XTAccessTokenStorageWrapper saveAccessToken:userModel.access_token forUsername:userModel.username];
     }
     
     return result;
@@ -32,13 +35,22 @@
 {
     BOOL result = NO;
     
-    NSDictionary *returnDictionary = [XTServerCommunicationsWrapper authenticateUserWithUsername:userModel.username
-                                                                                     accessToken:userModel.access_token];
-    
-    if (nil == returnDictionary[[XTConstants kErrorKey]])
+    if (nil == userModel.access_token)
     {
-        result = YES;
-        [userModel populateWithDictionary:returnDictionary];
+        userModel.access_token = [XTAccessTokenStorageWrapper accessTokenForUsername:userModel.username];
+    }
+    
+    if (nil != userModel.access_token)
+    {
+        NSDictionary *returnDictionary = [XTServerCommunicationsWrapper authenticateUserWithUsername:userModel.username
+                                                                                         accessToken:userModel.access_token];
+        
+        if (nil != returnDictionary &&
+            nil == returnDictionary[[XTConstants kErrorKey]])
+        {
+            result = YES;
+            [userModel populateWithDictionary:returnDictionary];
+        }
     }
     
     return result;
@@ -72,6 +84,7 @@
     if (nil != returnDictionary[[XTConstants kOkKey]])
     {
         result = YES;
+        [XTAccessTokenStorageWrapper deleteAccessTokenForUsername:userModel.username];
     }
     
     return result;

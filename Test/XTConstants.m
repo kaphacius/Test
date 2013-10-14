@@ -70,4 +70,49 @@
    return @"http://127.0.0.1:5000/mymusic/api/v1.0/users/";
 }
 
++ (NSString *)kSuccessMesage
+{
+    return @"Success";
+}
+
++ (NSString *)kFailureMessage
+{
+    return @"Failure";
+}
+
++ (NSString *)kMandatoryFieldsMessage
+{
+    return @"All fields are mandatory";
+}
+
++ (NSString *)kOkButtonTitle
+{
+    return @"OK";
+}
+
++ (NSString *)kCancelButtonTitle
+{
+    return @"Cancel";
+}
+
++ (NSInteger)kOkButtonIndex
+{
+    return 1;
+}
+
++ (NSInteger)kCancelButtonIndex
+{
+    return 0;
+}
+
++ (NSInteger)kBlockingViewTag
+{
+    return 100;
+}
+
++ (NSString *)kBlockingViewNibName
+{
+    return @"XTBlockingView";
+}
+
 @end

@@ -165,8 +165,17 @@
                                     <color key="titleShadowColor" red="0.67413870610000004" green="0.92447251900000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="authenticateButtonTapped" destination="HcK-yY-MKa" eventType="touchUpInside" id="7gU-jq-BIn"/>
                                     <action selector="logOffButtonTapped" destination="jBx-NG-mmn" eventType="touchUpInside" id="5qO-PT-7gO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Sr-eR-D87">
+                                <rect key="frame" x="100" y="363" width="121" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleShadowColor" red="0.67413870610000004" green="0.92447251900000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteButtonTapped" destination="jBx-NG-mmn" eventType="touchUpInside" id="iKs-pU-ALu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -174,6 +183,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="S7a-Dn-BeU"/>
                     <connections>
+                        <outlet property="_deleteButton" destination="8Sr-eR-D87" id="WDd-iT-Jxn"/>
                         <outlet property="_emailTextField" destination="HOp-mb-6mo" id="8KH-wB-2pG"/>
                         <outlet property="_firstNameTextField" destination="xAp-W1-SyU" id="wj8-ER-6kB"/>
                         <outlet property="_lastNameTextField" destination="rjr-MD-R05" id="Pnt-0h-6b3"/>

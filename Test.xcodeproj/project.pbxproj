@@ -11,6 +11,12 @@
 		D086C566180B296D0094792D /* XTAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D086C564180B296D0094792D /* XTAuthViewController.m */; };
 		D086C569180B2C9A0094792D /* XTAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D086C568180B2C9A0094792D /* XTAccountViewController.m */; };
 		D086C56A180B2C9A0094792D /* XTAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D086C568180B2C9A0094792D /* XTAccountViewController.m */; };
+		D08DDC06180BD65600DF4D47 /* XTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D08DDC05180BD65600DF4D47 /* XTUtils.m */; };
+		D08DDC07180BD65600DF4D47 /* XTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D08DDC05180BD65600DF4D47 /* XTUtils.m */; };
+		D08DDC09180BF3E500DF4D47 /* XTBlockingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08DDC08180BF3E500DF4D47 /* XTBlockingView.xib */; };
+		D08DDC0A180BF3E500DF4D47 /* XTBlockingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08DDC08180BF3E500DF4D47 /* XTBlockingView.xib */; };
+		D08DDC0D180C030F00DF4D47 /* XTBlockableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08DDC0C180C030F00DF4D47 /* XTBlockableViewController.m */; };
+		D08DDC0E180C030F00DF4D47 /* XTBlockableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08DDC0C180C030F00DF4D47 /* XTBlockableViewController.m */; };
 		D09CBE1A180A7F49008771F8 /* XTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D09CBE19180A7F49008771F8 /* XTConstants.m */; };
 		D09CBE1D180AB6B4008771F8 /* XTUserManagementWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D09CBE1C180AB6B4008771F8 /* XTUserManagementWrapper.m */; };
 		D0D8591018093CE3006C7DFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D8590F18093CE3006C7DFF /* Foundation.framework */; };
@@ -53,6 +59,11 @@
 		D086C564180B296D0094792D /* XTAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTAuthViewController.m; sourceTree = "<group>"; };
 		D086C567180B2C9A0094792D /* XTAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTAccountViewController.h; sourceTree = "<group>"; };
 		D086C568180B2C9A0094792D /* XTAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTAccountViewController.m; sourceTree = "<group>"; };
+		D08DDC04180BD65600DF4D47 /* XTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTUtils.h; sourceTree = "<group>"; };
+		D08DDC05180BD65600DF4D47 /* XTUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTUtils.m; sourceTree = "<group>"; };
+		D08DDC08180BF3E500DF4D47 /* XTBlockingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XTBlockingView.xib; sourceTree = "<group>"; };
+		D08DDC0B180C030F00DF4D47 /* XTBlockableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTBlockableViewController.h; sourceTree = "<group>"; };
+		D08DDC0C180C030F00DF4D47 /* XTBlockableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTBlockableViewController.m; sourceTree = "<group>"; };
 		D09CBE18180A7F49008771F8 /* XTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTConstants.h; sourceTree = "<group>"; };
 		D09CBE19180A7F49008771F8 /* XTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTConstants.m; sourceTree = "<group>"; };
 		D09CBE1B180AB6B4008771F8 /* XTUserManagementWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTUserManagementWrapper.h; sourceTree = "<group>"; };
@@ -110,6 +121,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D08DDC0F180C123A00DF4D47 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D09CBE18180A7F49008771F8 /* XTConstants.h */,
+				D09CBE19180A7F49008771F8 /* XTConstants.m */,
+				D08DDC04180BD65600DF4D47 /* XTUtils.h */,
+				D08DDC05180BD65600DF4D47 /* XTUtils.m */,
+				D0D8594E180940A0006C7DFF /* XTNonNilMutableDictionary.h */,
+				D0D8594F180940A0006C7DFF /* XTNonNilMutableDictionary.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		D08DDC10180C124000DF4D47 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D086C563180B296D0094792D /* XTAuthViewController.h */,
+				D086C564180B296D0094792D /* XTAuthViewController.m */,
+				D086C567180B2C9A0094792D /* XTAccountViewController.h */,
+				D086C568180B2C9A0094792D /* XTAccountViewController.m */,
+				D08DDC0B180C030F00DF4D47 /* XTBlockableViewController.h */,
+				D08DDC0C180C030F00DF4D47 /* XTBlockableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D08DDC11180C124700DF4D47 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8595218095B9E006C7DFF /* XTAccessTokenStorageWrapper.h */,
+				D0D8595318095B9E006C7DFF /* XTAccessTokenStorageWrapper.m */,
+				D0D8595618096F81006C7DFF /* XTJsonCommunicationsWrapper.h */,
+				D0D8595718096F82006C7DFF /* XTJsonCommunicationsWrapper.m */,
+				D0D8595A18099B6C006C7DFF /* XTServerCommunicationsWrapper.h */,
+				D0D8595B18099B6C006C7DFF /* XTServerCommunicationsWrapper.m */,
+				D09CBE1B180AB6B4008771F8 /* XTUserManagementWrapper.h */,
+				D09CBE1C180AB6B4008771F8 /* XTUserManagementWrapper.m */,
+			);
+			name = Wrappers;
+			sourceTree = "<group>";
+		};
+		D08DDC12180C124E00DF4D47 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				D08DDC08180BF3E500DF4D47 /* XTBlockingView.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
 		D0D8590318093CE3006C7DFF = {
 			isa = PBXGroup;
 			children = (
@@ -143,28 +203,16 @@
 		D0D8591518093CE3006C7DFF /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				D09CBE18180A7F49008771F8 /* XTConstants.h */,
-				D09CBE19180A7F49008771F8 /* XTConstants.m */,
+				D08DDC12180C124E00DF4D47 /* Xibs */,
+				D08DDC11180C124700DF4D47 /* Wrappers */,
+				D08DDC10180C124000DF4D47 /* ViewControllers */,
+				D08DDC0F180C123A00DF4D47 /* Utils */,
 				D0D8594418093DCE006C7DFF /* Models */,
 				D0D8591E18093CE3006C7DFF /* XTAppDelegate.h */,
 				D0D8591F18093CE3006C7DFF /* XTAppDelegate.m */,
 				D0D8592118093CE3006C7DFF /* Main.storyboard */,
 				D0D8592718093CE3006C7DFF /* Images.xcassets */,
 				D0D8591618093CE3006C7DFF /* Supporting Files */,
-				D0D8594E180940A0006C7DFF /* XTNonNilMutableDictionary.h */,
-				D0D8594F180940A0006C7DFF /* XTNonNilMutableDictionary.m */,
-				D0D8595218095B9E006C7DFF /* XTAccessTokenStorageWrapper.h */,
-				D0D8595318095B9E006C7DFF /* XTAccessTokenStorageWrapper.m */,
-				D0D8595618096F81006C7DFF /* XTJsonCommunicationsWrapper.h */,
-				D0D8595718096F82006C7DFF /* XTJsonCommunicationsWrapper.m */,
-				D0D8595A18099B6C006C7DFF /* XTServerCommunicationsWrapper.h */,
-				D0D8595B18099B6C006C7DFF /* XTServerCommunicationsWrapper.m */,
-				D09CBE1B180AB6B4008771F8 /* XTUserManagementWrapper.h */,
-				D09CBE1C180AB6B4008771F8 /* XTUserManagementWrapper.m */,
-				D086C563180B296D0094792D /* XTAuthViewController.h */,
-				D086C564180B296D0094792D /* XTAuthViewController.m */,
-				D086C567180B2C9A0094792D /* XTAccountViewController.h */,
-				D086C568180B2C9A0094792D /* XTAccountViewController.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -287,6 +335,7 @@
 				D0D8592818093CE3006C7DFF /* Images.xcassets in Resources */,
 				D0D8591A18093CE3006C7DFF /* InfoPlist.strings in Resources */,
 				D0D8592318093CE3006C7DFF /* Main.storyboard in Resources */,
+				D08DDC09180BF3E500DF4D47 /* XTBlockingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0D8593918093CE4006C7DFF /* InfoPlist.strings in Resources */,
+				D08DDC0A180BF3E500DF4D47 /* XTBlockingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +356,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0D8594718093DEB006C7DFF /* XTUserModel.m in Sources */,
+				D08DDC06180BD65600DF4D47 /* XTUtils.m in Sources */,
+				D08DDC0D180C030F00DF4D47 /* XTBlockableViewController.m in Sources */,
 				D0D8595418095B9E006C7DFF /* XTAccessTokenStorageWrapper.m in Sources */,
 				D0D8595818096F82006C7DFF /* XTJsonCommunicationsWrapper.m in Sources */,
 				D09CBE1D180AB6B4008771F8 /* XTUserManagementWrapper.m in Sources */,
@@ -329,7 +381,9 @@
 				D0D8594818093DEB006C7DFF /* XTUserModel.m in Sources */,
 				D086C56A180B2C9A0094792D /* XTAccountViewController.m in Sources */,
 				D0D8595918096F82006C7DFF /* XTJsonCommunicationsWrapper.m in Sources */,
+				D08DDC0E180C030F00DF4D47 /* XTBlockableViewController.m in Sources */,
 				D0D8593B18093CE4006C7DFF /* TestTests.m in Sources */,
+				D08DDC07180BD65600DF4D47 /* XTUtils.m in Sources */,
 				D0D8595D18099B6D006C7DFF /* XTServerCommunicationsWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
